@@ -4,7 +4,6 @@ const app = require('../app');
 describe('Movie routes', () => {
     describe('GET /api/v1/movies', () => {
         test('Should return all movies', async() => {
-            
             const res = await request(app)
                   .get('/api/v1/movies')
                   .send()
